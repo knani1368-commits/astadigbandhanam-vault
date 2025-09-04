@@ -12,9 +12,7 @@ services:
       - key: PORT
         value: 3001
       - key: MONGODB_URI
-        fromDatabase:
-          name: astadigbandhanam-db
-          property: connectionString
+        value: mongodb+srv://astadigbandhanam_user:YOUR_PASSWORD@cluster0.xxxxx.mongodb.net/astadigbandhanam?retryWrites=true&w=majority
       - key: JWT_SECRET
         generateValue: true
       - key: JWT_EXPIRES_IN
